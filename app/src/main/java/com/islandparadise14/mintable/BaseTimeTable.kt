@@ -126,7 +126,7 @@ open class BaseTimeTable : LinearLayout {
     protected fun calculateTime (schedules: ArrayList<ScheduleEntity>) {
         tableStartTime =
             getHour(schedules[0].startTime)
-        tableEndTime = 16
+        tableEndTime = 23
         schedules.map {entity ->
             if(getHour(entity.startTime) < tableStartTime)
                 tableStartTime =
